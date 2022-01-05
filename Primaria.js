@@ -103,7 +103,7 @@ function myFunctionCuento3() {
     click.style.display = "none";
   }
 }
-function myFunctionCUento4() {
+function myFunctionCuento4() {
   let click = document.getElementById("cuento4");
   if (click.style.display === "none") {
     click.style.display = "block";
