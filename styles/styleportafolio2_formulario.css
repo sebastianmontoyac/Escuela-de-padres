@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: 10px;
+  size: 100vh;
+  font-family: "Spectral", serif;
+}
+
+a {
+  text-decoration: none;
+}
+.cita {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: lighter;
+  font-style: italic;
+  color: #8c6542;
+}
+header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.container {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(1, 1fr); 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nombres nombres nombres . ."
+    "apellidos apellidos apellidos . ."
+    "correo correo correo . ."
+    "celular celular celular . ."
+    "informacion informacion informacion . ."
+    ". . . enviar ."; 
+}
+
+.FORMULARIO {
+ 
+  color: #8D4F04;
+  font-size: 3rem;
+ text-align-last: center;
+ white-space: wrap;
+ overflow: hidden;
+}
+
+.nombres {
+  grid-area: nombres;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.apellidos {
+  grid-area: apellidos;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.correo {
+  grid-area: correo;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.celular {
+  grid-area: celular;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.informacion {
+  grid-area: informacion;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.enviar {
+  grid-area: enviar;
+  color: #8D4F04;
+  font-size: 2rem;
+}
+
+.espacionombre {
+  grid-area: espacionombre;
+ width:23.5rem ; 
+}
+
+.espacioapellidos {
+  grid-area: espacioapellidos;
+  width:23.5rem ;
+}
+
+.espaciocorreo {
+  grid-area: espaciocorreo;
+  
+}
+
+.espaciocelular {
+  grid-area: espaciocelular;
+  
+}
+
+.espacioinformacion {
+  grid-area: espacioinformacion;
+ 
+}
+.input{
+  width:23.5rem ;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  font-size: 2rem;
+}
+h1 {
+  color: #da9037;
+}
+
+h2 {
+  font-size: 3vw;
+  color: #8d4f04;
+  text-align: center;
+}
+.vermas {
+  font-size: 2rem;
+  text-align: center;
+  color: #98938b;
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+.datos {
+  text-align: center;
+  color: #efae67;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.conteiner-Fotter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: space-evenly;
+  align-content: center;
+  grid-gap: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+@media screen and (max-width: 688px) {
+  .FORMULARIO{
+    grid-area: FORMULARIO;
+    color: #8D4F04;
+    font-size: 1.5rem;
+   text-align-last: center;
+   white-space: wrap;
+   overflow: hidden;
+  }
+ 
+  .nombres,.apellidos, .correo, .celular, .informacion, .enviar{
+    color: #8D4F04;
+    font-size: 1.5rem;
+  }
+
+  .espacionombre, .espacioapellidos, .espaciocorreo, .espaciocelular, .espacioinformacion{
+    width: 15rem;
+  }
+  
+  .input{
+    width:15rem ;
+  }
+  
+  @media screen and (max-width: 374px) {
+    .FORMULARIO {
+      grid-area: FORMULARIO;
+      color: #8D4F04;
+      font-size: 1rem;
+     text-align-last: center;
+     white-space: wrap;
+     overflow: hidden;
+    }
+    .nombres,.apellidos, .correo, .celular, .informacion, .enviar{
+      color: #8D4F04;
+      font-size: 1rem;
+    }
+    .espacionombre, .espacioapellidos, .espaciocorreo, .espaciocelular, .espacioinformacion{
+      width: 10rem;
+    }
+
+    .input{
+      width: 10rem;
+    }
